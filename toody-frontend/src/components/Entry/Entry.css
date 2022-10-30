@@ -1,0 +1,51 @@
+.entry {
+    width: 30%;
+    background-color: var(--beige);
+    color: rgba(0, 0, 0, 0.85);
+    padding: 2px 20px;
+}
+
+.entry + .entry {
+    margin-left: 20px;
+}
+
+.entry-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px #F0F0F0;
+}
+
+.open-more-button {
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    color: #9F714D;
+    cursor: pointer;
+}
+
+.more {
+    background-color: var(--beige);
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.more button {
+    background-color: rgba(159, 113, 77, 0.5);
+    border: 1px solid #9F714D;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.more button:hover {
+    background-color: rgba(0, 0, 0, .1)
+}
+
+.entry-content {
+    padding: 10px 0;
+}

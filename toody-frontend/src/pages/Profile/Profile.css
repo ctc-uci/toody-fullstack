@@ -1,0 +1,41 @@
+.profile-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.profile-page-content {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    height: 430px;
+    width: 430px;
+    border-radius: 100px;
+    background-color: #BFBFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    margin: 48px;
+    width: fit-content;
+}
+
+.profile-info h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.all-stats {
+    display: flex;
+    flex-direction: row;
+}

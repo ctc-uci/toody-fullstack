@@ -1,0 +1,45 @@
+.journal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-entry {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-entry textarea {
+    min-width: 35%;
+    min-height: 64px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    padding: 5px;
+}
+
+.submit-entry {
+    height: 30px;
+    width: 90px;
+    border: 1px solid rgb(217, 217, 217);
+    background-color: #F5F5F5;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.submit-entry:hover {
+    background-color: rgba(217, 217, 217, 0.8)
+}
+
+.journal {
+    width: 90%;
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+}

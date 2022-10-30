@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+:root {
+  --beige: #FFFFFF;
+  --dark-grey: #454545;
+  --emerald: #32936F;
+  --jade: #76A891;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--jade);
+  color: var(--beige);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

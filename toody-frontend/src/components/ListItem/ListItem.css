@@ -1,0 +1,47 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: inherit;
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.list-item .checkbox {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.list-item button {
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+}
+
+.list-item p {
+    margin-block: 0;
+}
+
+.open-menu-button {
+    cursor: pointer;
+}
+
+.menu {
+    background-color: var(--beige);
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu button {
+    background-color: transparent;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: rgba(0, 0, 0, .1)
+}
