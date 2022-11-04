@@ -13,16 +13,25 @@ const Home = ({ name }) => {
   // ignore this line; this gets the React app to run properly
   console.log(axios, setTodos, setNotes);
 
+  const instance = axios.create({
+    baseURL: 'http://localhost:3001',
+    headers: {'X-Custom-Header': 'foobar'}
+  });
+
   const getTodos = async () => {
     // TODO: Complete this function with an axios.get() call
     // to the appropriate backend endpoint for todos. The todos on
     // the homepage should populate correctly when this is done.
+    const data = await instance.get("/todos");
+    setTodos(data.data);
   };
 
   const getNotes = async () => {
     // TODO: Complete this function with an axios.get() call to the
     // appropriate backend endpoint for notes. The notes on the
     // homepage should populate correctly when this is done.
+    const data = await instance.get("/notes");
+    setNotes(data.data);
   };
 
   useEffect(() => {
