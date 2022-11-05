@@ -7,8 +7,8 @@ import { SlArrowDown } from 'react-icons/sl';
 import './Home.css';
 
 const Home = ({ name }) => {
-  const [ todos, setTodos ] = useState([]);
-  const [ notes, setNotes ] = useState([]);
+  const [todos, setTodos] = useState([]);
+  const [notes, setNotes] = useState([]);
 
   // ignore this line; this gets the React app to run properly
   console.log(axios, setTodos, setNotes);
@@ -18,15 +18,15 @@ const Home = ({ name }) => {
     // to the appropriate backend endpoint for todos. The todos on
     // the homepage should populate correctly when this is done.
     const todosResult = await axios.get('http://localhost:3001/todos');
-    console.log(todosResult);
     setTodos(todosResult.data);
-    console.log(todos);
   };
 
   const getNotes = async () => {
     // TODO: Complete this function with an axios.get() call to the
     // appropriate backend endpoint for notes. The notes on the
     // homepage should populate correctly when this is done.
+    const notesResult = await axios.get('http://localhost:3001/notes');
+    setNotes(notesResult.data);
   };
 
   useEffect(() => {
