@@ -14,15 +14,16 @@ const Home = ({ name }) => {
   console.log(axios, setTodos, setNotes);
 
   const getTodos = async () => {
-    // TODO: Complete this function with an axios.get() call
-    // to the appropriate backend endpoint for todos. The todos on
-    // the homepage should populate correctly when this is done.
+    const todos = await axios.get('http://localhost:3001/todos');
+    setTodos(todos.data);
   };
 
   const getNotes = async () => {
     // TODO: Complete this function with an axios.get() call to the
     // appropriate backend endpoint for notes. The notes on the
     // homepage should populate correctly when this is done.
+    const notes = await axios.get('http://localhost:3001/notes');
+    setNotes(notes.data);
   };
 
   useEffect(() => {
