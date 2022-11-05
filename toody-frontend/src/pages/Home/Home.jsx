@@ -17,6 +17,12 @@ const Home = ({ name }) => {
     // TODO: Complete this function with an axios.get() call
     // to the appropriate backend endpoint for todos. The todos on
     // the homepage should populate correctly when this is done.
+    try {
+      const { data }  = await axios.get("http://localhost:3001/todos/");
+      setTodos(data);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const getNotes = async () => {
