@@ -14,13 +14,13 @@ const Home = ({ name }) => {
   console.log(axios, setTodos, setNotes);
 
   const getTodos = async () => {
-    const todos = axios.get('http://localhost:3001/todos');
-    setTodos((await todos).data);
+    const todos = await axios.get('http://localhost:3001/todos');
+    setTodos(todos.data);
   };
 
   const getNotes = async () => {
-    const notes = axios.get('http://localhost:3001/notes');
-    setNotes((await notes).data);
+    const notes = await axios.get('http://localhost:3001/notes');
+    setNotes(notes.data);
   };
 
   useEffect(() => {
